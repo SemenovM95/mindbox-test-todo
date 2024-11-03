@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: $font-family_1;
+  font-weight: inherit;
+  color: $color_default;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  &:hover {
+    border-color: $color_accentDark;
+  }
+  &::-moz-focus-inner {
+    border: none;
+  }
+}

@@ -1,0 +1,33 @@
+.text {
+  font-size: $font_size-todo;
+  @media (min-width: $viewport_mobile) {
+    font-size: $font-size-todo-sm;
+  }
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: $color_lightBlack;
+  }
+}
+
+.checkbox {
+  width: 32px;
+  height: 32px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center left;
+  appearance: none;
+  -webkit-appearance: none;
+  &:checked {
+    background-image: url($icon_checkbox);
+    border-color: darkseagreen;
+  }
+}

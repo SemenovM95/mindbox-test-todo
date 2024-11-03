@@ -1,0 +1,39 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px 0;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #e6e6e6;
+  color: $color_lightGray;
+  @media (max-width: $viewport_mobile) {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 0 4px;
+}
+.filter-item {
+  color: $color_default;
+  @media (max-width: $viewport_mobile) {
+    font-size: 16px;
+  }
+  &.selected button {
+    border-color: $color_accent;
+  }
+}
+
+.todo-count {
+  font-size: inherit;
+}
+
+.clear-completed {
+  font-size: inherit;
+  width: max-content;
+}
